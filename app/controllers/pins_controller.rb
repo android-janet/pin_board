@@ -1,7 +1,8 @@
 class PinsController < ApplicationController
-before_action [:show, :edit, :update, :destroy]
+before_action only: [:show, :edit, :update, :destroy]
 
 def index
+  @pin = Pin.new 
 end
 
 def new

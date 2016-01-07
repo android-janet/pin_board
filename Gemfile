@@ -15,6 +15,8 @@ gem 'simple_form', '~> 3.2'
 gem 'devise', '~> 3.5', '>= 3.5.3'
 gem "paperclip", "~> 4.3"
 gem 'masonry-rails', '~> 0.2.4'
+gem 'populator', '~> 1.0'
+gem 'faker', '~> 1.6', '>= 1.6.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do

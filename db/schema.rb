@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150207175516) do
+=======
+ActiveRecord::Schema.define(version: 20151221225551) do
+
+  create_table "pins", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.integer  "user_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "pins", ["user_id"], name: "index_pins_on_user_id"
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -24,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150207175516) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+<<<<<<< HEAD
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
@@ -31,6 +50,10 @@ ActiveRecord::Schema.define(version: 20150207175516) do
     t.string   "Index"
     t.datetime "created_at"
     t.datetime "updated_at"
+=======
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

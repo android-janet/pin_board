@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+<<<<<<< HEAD
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.3'
 
@@ -43,4 +44,30 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+=======
+
+gem 'rails', '4.2.1'
+gem 'sqlite3'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+gem 'haml', '~> 4.0.5'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'simple_form', '~> 3.2'
+gem 'devise', '~> 3.5', '>= 3.5.3'
+gem "paperclip", "~> 4.3"
+gem 'masonry-rails', '~> 0.2.4'
+gem 'populator', '~> 1.0'
+gem 'faker', '~> 1.6', '>= 1.6.1'
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+  gem 'haml-rails', '~> 0.9.0'
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
 end

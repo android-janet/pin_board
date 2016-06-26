@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+<<<<<<< HEAD
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+=======
+
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -38,4 +42,14 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+<<<<<<< HEAD
+=======
+
+  #Need for Devise - Define default url options.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
+
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
 end

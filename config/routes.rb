@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'home/index'
 
   devise_for :users
@@ -56,4 +57,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+=======
+
+  devise_for :users
+resources :pins
+
+root 'pins#index'
+
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
 end

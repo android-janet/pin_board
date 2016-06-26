@@ -6,7 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+<<<<<<< HEAD
 module MessageBoard
+=======
+module PinBoard
+>>>>>>> 272ae6ceb3696ef6b3a6429c7fd4b9f878c7d754
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
